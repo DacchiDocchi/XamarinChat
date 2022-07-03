@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <Button
+            android:id="@+id/send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@android:drawable/ic_menu_send"
+            android:tint="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"/>
+
+    <EditText
+            android:id="@+id/input_message"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/send_message"
+            android:hint="Your message"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/send_message"/>
+
+</RelativeLayout>
